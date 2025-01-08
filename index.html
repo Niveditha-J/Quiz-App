@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcard App</h1>
+        <div id="flashcard-container">
+            <div class="flashcard" id="flashcard">
+                <div class="question" id="question">Question will appear here</div>
+                <div class="answer" id="answer">Answer will appear here</div>
+            </div>
+            <div class="buttons">
+                <button id="flip-button">Flip</button>
+                <button id="correct-button" disabled>Correct</button>
+                <button id="incorrect-button" disabled>Incorrect</button>
+            </div>
+        </div>
+
+        <div id="study-options">
+            <button id="start-studying-button">Start Studying</button>
+        </div>
+
+        <div id="game-over" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>Your score: <span id="score"></span></p>
+            <p>Correct Answers: <span id="correct-count"></span></p>
+            <p>Incorrect Answers: <span id="incorrect-count"></span></p>
+            <button id="playback-button">Play Again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
